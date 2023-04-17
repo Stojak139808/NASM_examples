@@ -1,7 +1,8 @@
 # NASM examples with C
 
 This repository contains a bunch of NASM examplse, mostly to use it together
-with C.
+with C. It acts as a learning ground for me and a cheat sheet on integrating
+assembly with C.
 
 The idea is, compile x86 asm with nasm:
 
