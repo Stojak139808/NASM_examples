@@ -35,14 +35,13 @@ main:
     leave
     ret
 
+
 print_n:    ; n passed on stack
     push    rbp
     mov     rbp, rsp
 
     lea     rdi, [rel .print_fmt]
     mov     rsi, [rbp + 16]
-    xor     rdx, rdx
-    xor     rcx, rcx
     xor     rax, rax
     call    printf  wrt ..plt
 
@@ -59,8 +58,6 @@ get_n:      ; get an integer with scanf and return it in rax
 
     lea     rdi, [rel .scanf_fmt]
     lea     rsi, [rbp - 8]
-    xor     rdx, rdx
-    xor     rcx, rcx
     xor     rax, rax
     call    scanf  wrt ..plt
 
