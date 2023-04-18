@@ -1,0 +1,6 @@
+# any binary
+bin
+a.out
+
+# obj files
+*.o
